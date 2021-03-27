@@ -1,6 +1,6 @@
 # ex_nojumpinterior
 
-**Please check out fivem forum post for video and pictures** : cfx.re
+**Please check out fivem forum post for video and pictures** : https://forum.cfx.re/t/standalone-esx-no-jump-in-interiors/2490536
 
 This is a small script for all of you that want to disable player **jumping** or **running** in interiors (like in police department, medical center and ....)
 i didn't see any script like this being released, so here we go!
@@ -15,6 +15,8 @@ i didn't see any script like this being released, so here we go!
 >you can get the interior info (in your Fivem F8 console) by a configurable command in your config.lua
 
 > installation : just download the script, drag it to your resources folder and add it to your server CFG, [config as you want] ,done!
+
+My discord if you need help : https://discord.com/invite/Mgyg2nVRhC
 
 **my other scripts :**
 
