@@ -37,15 +37,11 @@ function shouldDisableInteriorJump()
 	if interiorId ~= 0 then
 		if ESX then
 			for configInteriorId, configInteriorData in pairs(Config.excludeForJobs) do
-				if (tonumber(configInteriorId) and tonumber(configInteriorId)) == interiorId then
+				if tonumber(configInteriorId) and (tonumber(configInteriorId) == interiorId) then
 					local InteriorJobInfo = configInteriorData[PlayerData.job.name]
 					if InteriorJobInfo then
-						if InteriorJobInfo.disableSprintInInterior ~= nil then
-							cantSprint = InteriorJobInfo.disableSprintInInterior
-						end
-						if InteriorJobInfo.disableJumpInInterior ~= nil then
-							cantJump = InteriorJobInfo.disableJumpInInterior
-						end
+						cantSprint = InteriorJobInfo.disableSprintInInterior
+						cantJump = InteriorJobInfo.disableJumpInInterior
 					end
 				end
 			end
@@ -55,12 +51,8 @@ function shouldDisableInteriorJump()
 			if configPlayerModel == playerModel then
 				playerInteriorData = playerData[interiorId]
 				if playerInteriorData then
-					if playerInteriorData.disableSprintInInterior ~= nil then
-						cantSprint = playerInteriorData.disableSprintInInterior
-					end
-					if playerInteriorData.disableJumpInInterior ~= nil then
-						cantJump = playerInteriorData.disableJumpInInterior
-					end
+					cantSprint = playerInteriorData.disableSprintInInterior
+					cantJump = playerInteriorData.disableJumpInInterior
 				end
 			end
 		end
